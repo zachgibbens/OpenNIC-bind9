@@ -185,4 +185,6 @@ zone "epic" in {
 options {
         allow-recursion { any; };
 	version "[hidden]";
+	directory "/var/cache/bind";
+
 };
