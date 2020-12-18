@@ -204,7 +204,7 @@ allow-transfer {
 };
 listen-on-v6 { any; };
 listen-on-v6 port 5353 { any; }; 
-listen-on port 5353 { 0.0.0.0; };
-listen-on { 0.0.0.0; }; 
+listen-on port 5353 { 0.0.0.0/0; };
+listen-on { 0.0.0.0/0; }; 
 };
 include "/etc/bind/OpenNIC.acl";
