@@ -1,4 +1,3 @@
-# check to make sure these are still correct!
 masters opennicNS {
 // ns2.opennic.glue
 161.97.219.84;
@@ -208,3 +207,4 @@ listen-on port 5353 { 0.0.0.0/0; };
 listen-on { 0.0.0.0/0; }; 
 };
 include "/etc/bind/OpenNIC.acl";
+
