@@ -203,3 +203,4 @@ allow-transfer {
 	opennic_whitelist; localhost;
 };
 };
+include "/etc/bind/OpenNIC.acl";
