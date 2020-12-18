@@ -183,8 +183,23 @@ zone "epic" in {
         masters { opennicNS; opennicPeers; };
 };
 options {
-        allow-recursion { any; };
+//        allow-recursion { any; };
 	version "[hidden]";
 	directory "/var/cache/bind";
-
+allow-recursion {
+	opennic_T0; opennic_T1; opennic_T2;
+	opennic_whitelist; localhost;
+};
+allow-query {
+	opennic_T0; opennic_T1; opennic_T2;
+	opennic_whitelist; localhost;
+};
+allow-query-cache {
+	opennic_T0; opennic_T1; opennic_T2;
+	opennic_whitelist; localhost;
+};
+allow-transfer {
+	opennic_T0; opennic_T1; opennic_T2;
+	opennic_whitelist; localhost;
+};
 };
